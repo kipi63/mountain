@@ -30,17 +30,64 @@ button{
 	max-width: 135rem;
 	padding: 0 1.5rem;
 	box-sizing: border-box;
+	margin: 0 auto;
 
 }
 .hamburger{
 	display: none;
 }
+.header{
+	background: url("../img/intro/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	&::before{
+		content: "";
+		background-image: url("../img/intro/Shape_before.svg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: block;
+		width: 110%;
+		height: 20%;
+		margin: 0 auto;
 
+		position: absolute;
+		top: -4%;
+		
+		right: 0;
+		left: -2%;
+	}
+	&::after{
+		content: "";
+		background-image: url("../img/intro/Shap_after.svg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: block;
+		width: 110%;
+		height: 20%;
+		margin: 0 auto;
+
+		position: absolute;
+		bottom: -4%;
+		
+		right: 0;
+		left: -2%;
+	}
+}
 .nav{
-	padding: 3.4rem 0;
+	padding: 3.4rem 5rem ;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 4;
 	&__menu{
 		display: flex;
 		align-items: center;
@@ -57,6 +104,9 @@ button{
 		line-height: normal;
 		text-align: left;
 		text-transform: uppercase;
+		&:hover{
+			border-bottom: 3px solid rgb(5, 27, 221);
+		}
 	}
 	&__input{
 		padding: 1rem;
@@ -82,5 +132,74 @@ button{
 				font-size: 1.7rem;
 			}
 		}
+	}
+}
+.intro{
+	padding: 38rem 0 21rem 0;
+	&__content{
+		max-width: 50%;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 3rem;
+		
+	}
+	&__title{
+		text-shadow: 3px -4px 5px rgba(84, 82, 79, 0.22);
+		color: #deb37e;
+		font-family: "Open Sans";
+		font-size: 9.2rem;
+		font-weight: 800;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 1;
+		text-align: left;
+		text-transform: uppercase;
+		
+	}
+	&__subtitle{
+		color: #54524f;
+		font-family: "Open Sans";
+		font-size: 2.5rem;
+		font-weight: 700;
+		font-style: italic;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: justifyCenter;
+		text-transform: uppercase;
+	}
+	&__btn{
+		background-color: #ffffff;
+		opacity: 0.9;
+
+		color: #776c64;
+		font-family: "Open Sans";
+		font-size: 25px;
+		font-weight: 800;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+		text-transform: uppercase;
+
+		padding: 1.4rem 3.8rem;
+		border: none;
+
+		border-radius: 3rem;
+
+		margin-top: 3rem;
+
+		&:hover{
+			background-color: #deb37e;
+		}
+	}
+	&__text{
+		color: #54524f;
+		font-family: "Open Sans";
+		font-size:2.1rem;
+		font-style: italic;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: left;
 	}
 }
