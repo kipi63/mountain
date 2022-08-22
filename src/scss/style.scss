@@ -11,6 +11,9 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Open Sans', sans-serif;
 }
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
 a{
 	text-decoration: none;
 }
@@ -25,6 +28,31 @@ button{
 		content: "";
 		display: none;
 	}
+}
+
+.btn{
+	background-color: #7f7770;
+	margin: 5.4rem auto 0 auto;
+	padding: 2.8rem 8rem ;
+	border-radius: 5rem;
+	border: none;
+	display: block;
+
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 2.3rem;
+	font-weight: 800;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 21.01px;
+	text-align: left;
+	text-transform: uppercase;
+
+	&:hover{
+		background: red;
+	}
+
+	
 }
 .container{
 	max-width: 135rem;
@@ -42,6 +70,7 @@ button{
 	background-repeat: no-repeat;
 	position: relative;
 	overflow: hidden;
+	box-shadow: 3px -4px 5px rgba(162, 156, 156, 0.75);
 	&::before{
 		content: "";
 		background-image: url("../img/intro/Shape_before.svg");
@@ -58,6 +87,7 @@ button{
 		
 		right: 0;
 		left: -2%;
+		
 	}
 	&::after{
 		content: "";
@@ -75,10 +105,12 @@ button{
 		
 		right: 0;
 		left: -2%;
+		border: none;
+		
 	}
 }
 .nav{
-	padding: 3.4rem 5rem ;
+	padding: 1rem 5rem ;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -88,6 +120,7 @@ button{
 	left: 0;
 	right: 0;
 	z-index: 4;
+	background-color:#ffffff;
 	&__menu{
 		display: flex;
 		align-items: center;
@@ -202,4 +235,100 @@ button{
 		line-height: normal;
 		text-align: left;
 	}
+}
+
+.go{
+	padding-bottom: 18.4rem;
+	position: relative;
+	&__decor{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		
+		z-index: 0;
+
+		
+		& img{
+			max-width: 60rem;
+		}
+	}
+	&__title{
+		color: #e2a355;
+		font-family: "Open Sans";
+		font-size: 6.3rem;
+		font-weight: 800;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 auto;
+		margin-bottom: 4.8rem;
+	}
+	&__subtitle{
+		color: #7f7770;
+		font-family: "Open Sans";
+		font-size: 2.7rem;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+		margin-bottom: 8rem;
+	}
+	&__content{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+		gap: 7rem;
+	}
+	&__item{
+		max-width: 33.9rem;
+		width: 33.9rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	&__img{
+		display: block;
+		max-width: 100%;
+		
+		& img {
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&__info{
+		display: block;
+		width: 100%;
+		
+		background-color: #7f7770;
+		padding: 5.7rem 2rem 6.7rem 2rem;
+
+	}
+	&__main{
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 2.9rem;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: left;
+	}
+	&__sub{
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 23px;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: left;
+	}
+
+
+	
 }
