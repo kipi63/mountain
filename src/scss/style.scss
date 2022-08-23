@@ -344,7 +344,7 @@ button{
 		width: 100%;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		flex-wrap: wrap;
 		
 		
@@ -359,14 +359,16 @@ button{
 
 	}
 	&_img{
-		width: 50%;
+		flex: 1 1 0;
+		display: block;
+		
 		& img {
 			width: 100%;
 			height: 100%;
 		}
 	}
 	&__descr{
-		width: 50%;
+		flex: 1 1 0;
 	}
 	&__info{
 		width: 100%;
@@ -431,5 +433,121 @@ button{
 			background-color: red;
 		}
 
+	}
+}
+.hiking{
+	background: url("../img/hikin/bg_h.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	
+	&__decor{
+		position: absolute;
+		right: 0;
+		left: -10%;
+		width: 120%;
+		&-top{
+			top: 0;
+		}
+		
+		&-center{
+			width: 38%;
+			height: auto;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			
+		}
+		
+
+		& img {
+			width: 110%;
+
+		}
+	}
+	&__content{
+		padding: 35rem 0 21.4rem 0 ;
+		margin: 0 auto;
+	}
+	&__title{
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 5.8rem;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+		margin-bottom: 2%;
+	}
+	&__text{
+		color: #dbdbdb;
+		font-family: "Open Sans";
+		font-size:2.9rem;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+		max-width: 70%;
+		margin: 0 auto;
+	}
+}
+.world{
+	background: url("../img/world/world_bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	position: relative;
+	
+	&:after{
+		content: "";
+		background: url("../img/world/world_1.svg");
+		display: block;
+		position: absolute;
+		height: 20.3rem;
+		bottom: -5rem;
+		right: 0;
+		left: -1%;
+	}
+	
+	&__content{
+		padding: 51.4rem 0 44.4rem 0;
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+	}
+	&__main{
+		text-shadow: 3px -4px 5px rgba(84, 82, 79, 0.36);
+		color: #deb37e;
+		font-family: "Open Sans";
+		font-size: 8.3rem;
+		font-weight: 800;
+		font-style: italic;
+		letter-spacing: normal;
+		line-height: 1;
+		text-align: right;
+		text-transform: uppercase;
+		max-width: 48rem;
+		& span{
+			color: #54524f;
+		}
+	}
+
+}
+.main{
+	position: relative;
+	overflow: hidden;
+	&::after{
+		content: "";
+		background: url("../img/world/main_1.svg");
+		position: absolute;
+		width: 110%;
+		top: 45%;
+		transform: translateY(-55%);
+		right: 0;
+		left: -5%;
+		height: 31rem;
 	}
 }
