@@ -553,7 +553,19 @@ button{
 }
 
 .reviews{
+	position: relative;
 	padding: 4rem 0;
+	&__decor{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		& img {
+			width: 100%;
+			height: auto;
+			max-width: 100%;
+		}
+	}
 	&__content{
 		display: flex;
 		
@@ -693,4 +705,132 @@ button{
 		letter-spacing: normal;
 		text-align: center;
 	}
+}
+.bottom{
+	overflow: hidden;
+	position: relative;
+	&::before{
+		content: "";
+		position: absolute;
+		background: url("../img/bottom_decor/bottom_1.svg");
+		width: 140%;
+		top: -14.4rem;
+		left: -5%;
+		right: 0;
+		height: 21rem;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	&::after{
+		content: "";
+		position: absolute;
+		background: url("../img/bottom_decor/bottom_2.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 110%;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -5%;
+		right: 0;
+		height:18.7rem
+
+	}
+}
+
+
+
+.here{
+	background-color: #deb37e;
+	padding: 23rem 0;
+	&__content{
+		margin: 0 auto;
+		display: flex;
+		
+		justify-content: center;
+		flex-direction: column;
+		gap: 7.5rem;
+		width: 66%;
+	}
+	&__title{
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 7.5rem;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+	}
+	&__text{
+		color: #54524f;
+		font-family: "Open Sans";
+		font-size:3rem;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+	}
+	&__bottom{
+		position: relative;
+		padding: 0 5rem;
+	}
+	&__input{
+		margin: 0 auto;
+		
+
+		padding: 2rem 0 2rem 3.6rem;
+		width: 74.1%;
+		margin: 0 auto;
+
+		opacity: 0.68;
+		color: #54524f;
+		font-family: "Open Sans";
+		font-size:2.5rem;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: left;
+		border-radius: 5rem;
+
+		
+	}
+	&__button{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 12.5%;
+		z-index: 2;
+
+		width: 25%;
+		background-color: #54524f;
+
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 2.5rem;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+		text-transform: uppercase;
+
+		border-radius: 5rem;
+
+		padding: 2.3rem 0;
+		cursor: pointer;
+
+		&:hover{
+			background: red;
+		}
+	}
+
+	
+}
+.footer{
+	height: 98rem;
+	background-color: #7f7770;
 }
