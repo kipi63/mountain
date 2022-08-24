@@ -551,3 +551,146 @@ button{
 		height: 31rem;
 	}
 }
+
+.reviews{
+	padding: 4rem 0;
+	&__content{
+		display: flex;
+		
+		justify-content: space-between;
+		flex-direction: column;
+		gap: 25rem;
+	}
+	&__about{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(32rem , 1fr));
+		justify-items: center;
+	}
+	&__item{
+		max-width: 33.2rem;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+		gap: 2.8rem;
+	}
+	&__main{
+		color: #deb37e;
+		font-family: "Open Sans";
+		font-size: 3.3rem;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		text-align: left;
+	}
+	&__sub{
+		color: #333d42;
+		font-family: "Open Sans";
+		font-size: 1.9rem;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		text-align: left;
+	}
+
+
+
+	&__slide{
+		position: relative;
+	}
+	&__prev{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+
+		padding: 1rem;
+		background: yellow;
+		font-size: 2rem;
+		color: red;
+		&:hover{
+			color: blue;
+			background: red;
+		}
+	}
+	&__next{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+
+		background: yellow;
+		padding: 1rem;
+		font-size: 2rem;
+		color: red;
+		&:hover{
+			color: blue;
+			background: red;
+		}
+	}
+	&__dots{
+		display: block;
+		margin: 2rem auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+	}
+	&__dot{
+		width: 2rem;
+		height: 2rem;
+		background-color: red;
+		border-radius: 50%;
+		&:hover.active{
+			background: blue;
+		}
+	}
+
+
+	&__none{
+		display: none;
+	}
+	
+
+
+
+	&__coment{
+		
+		width: 58.7%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 5rem;
+	}
+	&__title{
+		color: #3f3f3f;
+		font-family: "Open Sans";
+		font-size: 10rem;;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+	}
+	&__text{
+		color: #3f3f3f;
+		font-family: "Open Sans";
+		font-size: 2.5rem;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: center;
+	}
+	&__name{
+		color: #3f3f3f;
+		font-family: "Open Sans";
+		font-size: 2.1rem;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: normal;
+		text-align: center;
+	}
+}
