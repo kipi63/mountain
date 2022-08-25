@@ -121,11 +121,17 @@ button{
 	right: 0;
 	z-index: 4;
 	background-color:#ffffff;
-	&__menu{
+	&__content{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 6.3rem;
+	}
+	&__menu{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 5rem;
 	}
 	&__link{
 		color: #54524f;
@@ -241,6 +247,8 @@ button{
 	padding-bottom: 18.4rem;
 	position: relative;
 	&__decor{
+		max-width: 40%;
+		
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -249,7 +257,8 @@ button{
 
 		
 		& img{
-			max-width: 60rem;
+			max-width: 100%;
+			height: auto;
 		}
 	}
 	&__title{
@@ -289,17 +298,13 @@ button{
 		justify-content: center;
 		flex-direction: column;
 		margin: 0 auto;
-	}
-	&__img{
-		display: block;
-		max-width: 100%;
-		
 		& img {
 			width: 100%;
 			max-width: 100%;
 			height: auto;
 		}
 	}
+	
 	&__info{
 		display: block;
 		width: 100%;
@@ -647,15 +652,16 @@ button{
 		align-items: center;
 		justify-content: center;
 		gap: 2rem;
+		&:hover.active{
+			background: blue;
+		}
 	}
 	&__dot{
 		width: 2rem;
 		height: 2rem;
 		background-color: red;
 		border-radius: 50%;
-		&:hover.active{
-			background: blue;
-		}
+		
 	}
 
 
@@ -730,8 +736,8 @@ button{
 		background-size: cover;
 		background-position: center;
 		width: 110%;
-		top: 50%;
-		transform: translateY(-50%);
+		top: 45%;
+		transform: translateY(-55%);
 		left: -5%;
 		right: 0;
 		height:18.7rem
@@ -835,11 +841,11 @@ button{
 	padding: 34.1rem 0 24.5rem;
 	&__content{
 		display: grid;
-		grid-template-columns: repeat(auto-fit , minmax(46rem, 1fr));
+		grid-template-columns: repeat(auto-fit , minmax(63.4rem, 1fr));
 		justify-items: center;
 	}
 	&__item{
-		max-width: 63rem;
+		max-width: 66rem;
 		&-1{
 			display: flex;
 			align-items: flex-start;
@@ -925,3 +931,5 @@ button{
 
 	}
 }
+
+@import"media"

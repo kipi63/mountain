@@ -1,3 +1,25 @@
+const navMenu= document.querySelector(".nav__menu");
+const hamburger = document.querySelector(".hamburger");
+const navLink = document.querySelectorAll('.nav__link');
+
+function mobileMenu() {
+	hamburger.classList.toggle("activet");
+	navMenu.classList.toggle("activet");
+
+}
+function closeMenu() {
+	hamburger.classList.remove("activet");
+	navMenu.classList.remove("activet");
+
+}
+hamburger.addEventListener("click" ,mobileMenu);
+
+navLink.forEach(n=>n.addEventListener("click" ,closeMenu))
+
+
+
+
+
 let slideIndex =1;
 showSlides(slideIndex);
 
@@ -24,3 +46,5 @@ function showSlides(n) {
 	slides[slideIndex-1].style.display = "block";
 	dots[slideIndex-1].classname += "active";
 }
+
+

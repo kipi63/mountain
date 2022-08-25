@@ -1,0 +1,90 @@
+@media(max-width: 901px) {
+	html{
+		font-size: 57%;
+	}
+	.discount{
+		&__item{
+			width: 100%;
+			max-width: 100%;
+			padding: 3rem 0;
+			& img {
+				max-width: 100%;
+				height: auto;
+
+			}
+		}
+		
+	}
+	.here{
+		
+		
+		&__button{
+			width: 30%;
+			right: 17%;
+		}
+	}
+	
+	.footer{
+		&__content{
+			gap: 4rem;
+
+		}
+		
+	}
+}
+
+@media(max-width: 770px){
+	html{
+		font-size: 55%;
+
+	}
+	.hamburger{
+		display: block;
+	}
+	.bar{
+		width: 30px;
+		height: 5px;
+		display: block;
+		background: #000;
+		margin-bottom: .3rem;
+		
+	}
+	.hamburger.activet .bar{
+		margin-bottom: -0.5rem;
+		transition: all .4s ease;
+		&:nth-last-child(1){
+			transform: rotate(45deg)
+		}
+		&:nth-last-child(2){
+			opacity: 0;
+		}
+		&:nth-last-child(3){
+			transform: rotate(-45deg)	
+		}
+	}
+	.nav{
+		position:relative;
+		&__menu{
+			position: fixed;
+			top: 15%;
+			right: -100%;
+			z-index: 1;
+			height: 90vh;
+			width: 50%;
+
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-around;
+			flex-direction: column;
+			background: #f8f5f0;
+			padding: 0 4rem;
+		}
+		&__menu.activet{
+			right: 0;
+			transition: all .3s ease;
+		}
+
+
+	}
+	
+}
