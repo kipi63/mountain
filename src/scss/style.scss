@@ -831,6 +831,97 @@ button{
 	
 }
 .footer{
-	height: 98rem;
 	background-color: #7f7770;
+	padding: 34.1rem 0 24.5rem;
+	&__content{
+		display: grid;
+		grid-template-columns: repeat(auto-fit , minmax(46rem, 1fr));
+		justify-items: center;
+	}
+	&__item{
+		max-width: 63rem;
+		&-1{
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+			flex-direction: column;
+			gap: 3.6rem;
+			max-width: 46rem;
+			width: 46rem;
+		}
+	}
+	&__title{
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size:3.2rem;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: left;
+	}
+	&__text{
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 2.4rem;
+		font-weight: 400;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		text-align: left;
+	}
+	&__box{
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 4.8rem;
+		flex-wrap: wrap;
+		
+	}
+	&__element{
+		display: flex;
+		gap: 3.7rem;
+		flex-direction: column;
+
+	}
+	&__nav{
+		display: flex;
+		gap: 2rem;
+		flex-direction: column;
+	}
+
+
+	&__links{
+		& a {
+			color: #ffffff;
+			font-family: Montserrat;
+			font-size:2.4rem;
+			font-weight: 400;
+			font-style: normal;
+			letter-spacing: normal;
+			line-height: normal;
+			text-align: left;
+			&:hover{
+				border-bottom: 3px solid rgb(255, 255, 255);
+			}
+		}
+	}
+
+	&__icons{
+		display: flex;
+		flex-direction: row;
+		gap:1.3rem;
+		& i {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 4.2rem;
+			height: 4.2rem;
+			border-radius: 50%;
+			background: #ffffff;
+			font-size: 2.5rem;
+			color: #7f7770;
+
+		}
+
+	}
 }
