@@ -38,6 +38,24 @@
 		font-size: 55%;
 
 	}
+	.intro{
+		padding-top: 20rem;
+		&__content{
+			max-width: 80%;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+		}
+		&__title{
+			text-align: center;
+		}
+		&__subtitle{
+			text-align: center;
+		}
+		&__text{
+			text-align: center;
+		}
+	}
 	.hamburger{
 		display: block;
 	}
@@ -83,8 +101,98 @@
 			right: 0;
 			transition: all .3s ease;
 		}
+		
 
 
 	}
+	.here{
+		&__content{
+			width: 100%;
+		}
+	}
+	.discount{
+		&__info{
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
 	
+}
+
+@media(max-width: 500px){
+
+	html{
+		font-size: 50%;
+	}
+	.nav{
+		&__input{
+			display: none;
+		}
+		&__logo{
+			& img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.intro{
+		padding-top: 20rem;
+		&__content{
+			max-width: 80%;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+		}
+		&__title{
+			text-align: center;
+		}
+		&__subtitle{
+			text-align: center;
+		}
+		&__text{
+			text-align: center;
+		}
+	}
+	.discount{
+		&__info{
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
+	.reviews{
+		&__item{
+			text-align: center;
+		}
+		&__main,
+		&__sub{
+			text-align: center;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.bottom{
+		&::after{
+			top: 37%;
+			transform: translateY(-63%);
+		}
+	}
+
+	.footer{
+		&__content{
+			grid-template-columns: repeat(auto-fit , minmax(100%,1fr));
+		}
+		&__item{
+			width: 100%;
+			max-width: 100%;
+			padding: 0 2rem;
+			
+		}
+		&__box{
+			
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+	}
 }
